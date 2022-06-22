@@ -1,38 +1,128 @@
-.App {
+body{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97.6vh;
+  background-color: #62a8f0;
+}
+
+.container{
+  margin-top: 100px;
+}
+
+.title{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-wrapper{
+  width: 600px;
+  min-height: 400px;
+  margin: auto;
+  padding: 40px;
+  color: white;
+  background-color: #3c424a;  
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1{
+  text-align: center;
+  margin: 0 0 20px;
+  font-family: 'josefin sans';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.input-list, .react-datepicker__input-container input{
+  background-color: #22272b;
+  border: 0;
+  padding: 10px 0;
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'josefin sans';
+  cursor: pointer;
+}
+
+form .button-form-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+form button{
+  width: 49%;
+  padding: 10px 0;
+  background-color: #22272b;
+  border: 0;
+  color: #62a8f0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+}
+
+form button:hover{
+  background-color: #62a8f0;
+  color: #22272b;
+}
+
+.output-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #22272b;
+  padding: 10px 10px 0;
+}
+
+.checkbox
+{
+transform: scale(2);
+cursor: pointer;
+}
+
+.list-output{
+  margin: 20px auto 20px 50px;
+}
+
+.task{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  font-family: 'josefin sans';
+}
+
+.date{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+.button-output{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-button{
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-button, .delete-button{
+  width: 60px;
+  min-height: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: #22272b;
+  border: 0;
+  color: #62a8f0;
+  cursor: pointer;
+}
+
+.button-output button:hover{
+  background-color: #62a8f0;
+  color: #22272b;
 }
